@@ -40,7 +40,7 @@ export const CreateNote = ({ openModal, setOpenModal }) => {
 
             }
         } catch (err) {
-            navigate("/home")
+            navigate("/")
         }
     }
     return (
