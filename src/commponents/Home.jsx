@@ -63,7 +63,7 @@ export const Home = () => {
                 fetchNotes(token);
             }
         } catch (error) {
-            navigate("/home")
+            navigate("/")
         }
     }
     useEffect(() => {
