@@ -26,7 +26,7 @@ const Login = ({ }) => {
         password: formData.password
       })
       localStorage.setItem('token', res.data.token);
-      navigate("/home")
+      navigate("/")
     } catch (err) {
       alert(err.msg)
     }
