@@ -4,6 +4,7 @@ import { Form, InputGroup } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useNavigate } from 'react-router-dom';
+import API_URL from "../config/global"
 
 export const CreateNote = ({ openModal, setOpenModal }) => {
     const [noteData, setNoteData] = useState({
@@ -26,7 +27,7 @@ export const CreateNote = ({ openModal, setOpenModal }) => {
                     title, content
                 }
 
-                await axios.post(`http://localhost:5000/api/notes/create`, newNote, {
+                await axios.post(`${API_URL}/api/notes/create`, newNote, {
                     headers: { Authorization: token }
                 }).then((res) => {
                     alert(res.data.msg);
