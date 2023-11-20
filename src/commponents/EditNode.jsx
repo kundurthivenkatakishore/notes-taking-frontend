@@ -55,7 +55,7 @@ export const EditNode = ({ editNote, setEditNote, selectedNote }) => {
                 })
             }
         } catch (err) {
-            navigate("/home")
+            navigate("/")
         }
     }
 
